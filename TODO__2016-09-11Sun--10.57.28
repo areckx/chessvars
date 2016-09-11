@@ -1,0 +1,58 @@
+Goals and Expectations
+----------------------
+
+This is basically an idea that I have been toying with for quite some time.
+While studying and playing chess on Linux, or any operating system, there seems
+to be a serious lacking in certain areas.
+
+
+The following features are to be implented in chessvars:
+
+
+	[] Define scalable grid for play
+
+This aspect should be in all chess clients, in my opinion. There are literally
+an infinite amount of numbers to choose from, and it seems that all chess
+clients are hardcoded specifically for chess.
+
+The philosophy of chessvars is that a client should be a tool, not a burden,
+
+Let's say you want to invent your own game. The chessvars client will allow you
+to start from any number of squares( a relative term. It can be any shape, and
+need not conform to a rectangular or square formation)
+
+
+Now, all it will be my goal to begin with a plugin system. The standard chess
+games will be included, such as standard chess, chess960, and the other
+variants of standard chess. Shogi, xianqi, and other games of those sort will
+be included. The option for grid-style games, as opposed to square, such as Go
+will also be included.
+
+This is an ambitious project, but it is a necessary one. People who play one
+chess game often play many, and the option to modify the rules is useful in
+learning how to visualize and understand the game of chess.
+
+
+Naturally, there will be a need to notate these games. This will all be
+customizable completely by anyone wishing to contribute to or add to an
+existing plugin. I am thinking simplicity.
+
+If at all possible, scripts should all be plaintext. If not, then perhaps
+lua or some other simple way to define rules.
+
+
+
+[] The various fields which will need to be defined
+
+
+	o board
+
+	o pieces
+
+	o legal moves for each piece
+
+	o notation system
+
+	o clocks / time control
+
+	o scoring systems
